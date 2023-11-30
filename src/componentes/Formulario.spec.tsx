@@ -94,7 +94,6 @@ describe("Formulario", () => {
       jest.runAllTimers();
     });
 
-    mensagemDeErro = screen.queryByRole("alert");
-    expect(mensagemDeErro).toBeNull();
+    expect( screen.queryByRole("alert")).toBeNull();
   });
 });
